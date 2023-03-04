@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/remainderIMG"
+        android:layout_width="188dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/refilIMG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/r2" />
+
+    <ImageButton
+        android:id="@+id/refilIMG"
+        android:layout_width="96dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="424dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/remainderIMG"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/reff4"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/pillIMG"
+        android:layout_width="150dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainderIMG"
+        app:srcCompat="@drawable/pills4"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
