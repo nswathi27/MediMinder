@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9E1E6">
+
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/user_icon"
+        />
+
+
+    <TextView
+        android:id="@+id/medicine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aldrich"
+        android:text="Medicine Name"
+        android:textSize="20sp"
+        android:layout_marginTop="70dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/time_quantity_layout"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicine_name"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="10:00 AM"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="2 tablets"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_quantity_layout"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/snooze_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="Snooze" />
+
+        <Button
+            android:id="@+id/took_md_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f5ce64"
+            android:text="Took Medicine"
+            android:textColor="#455A64" />
+
+    </LinearLayout>
+
+</RelativeLayout>
